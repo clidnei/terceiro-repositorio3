@@ -1,39 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-:root{
-    --bg-color: #16423C;
-    --primary-color: #6A9C89;
-    --secundary-color: #C4DAD2;
-    --front: "Embed code", family=Playfair+Display
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-}
-body{
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    font-family: var(--front);
-    height: 100vh;
-    margin: 0;
 
+:root {
+   --bg-color: #001F3F;
+   --primary-color: #3A6D8C;
+   --secondary-color: #6A9AB0;
+   --font: "Poppins", sans-serif;
 }
-h1{
-    color: var(--bg-color);
-    font-weight: 700;
+
+
+body {
+   background-color: var(--bg-color);
+   color: var(--primary-color);
+   font-family: var(--font);
+   height: 100vh;
+   margin: 0;
 }
-nav{
-    display: flex;
-    justify-content: center;
-    font: 400;
+
+
+h1 {
+   font-size: 2rem;
+   color: var(--bg-color);
+   font-weight: 700;
 }
-nav a{
-    text-decoration: none;
-    color: var(--bg-color);
-    margin: 0rem 2rem 1rem 0rem;
-    font-size: 1.2rem;
+
+
+nav {
+   display: flex;
+   justify-content: center;
+   font-weight: 400;
 }
-header{
-    background-color:  var(--primary-color);
-    text-align: center;
-    padding: 1px;
+
+
+nav a {
+   text-decoration: none;
+   color: var(--bg-color);
+   margin: 0 2rem 1rem 0rem;
+   font-size: 1.2rem;
 }
+
+
+header {
+   background-color: var(--primary-color);
+   text-align: center;
+   padding: 1px;
+}
+
 
 nav a:hover {
    text-decoration: underline;
@@ -41,13 +53,36 @@ nav a:hover {
    transition: transform 0.1s;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    width: 100%
-    height: 3rem;
-    margin-top: 2rem;
+
+.graficos-container {
+   margin: 5rem;
+}
+
+
+.graficos-container__texto {
+   font-size: 1.3rem;
+   text-align: center;
+   padding: 2rem;
+   border: var(--secondary-color) solid 2px;
+}
+
+
+span {
+   font-weight: bold;
+   color: var(--secondary-color);
+}
+.grafico {
+   margin-top: 3rem;
+}
+
+
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--primary-color);
+   color: var(--bg-color);
+   width: 100%;
+   height: 3rem;
+   margin-top: 2rem;
 }
